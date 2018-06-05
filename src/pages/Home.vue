@@ -19,7 +19,7 @@
       <div class="title">ACTIVITY</div>
       <div class="act-content">
         <div class="act-item">
-          <div class="item-title">TYT Token Exchange</div>
+          <div class="item-title">TYT Token Distribution</div>
         </div>
         <div class="act-item">
           <div class="item-title">Air Drop</div>
