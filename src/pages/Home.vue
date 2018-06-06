@@ -24,6 +24,7 @@
         <div class="act-item">
           <div class="item-title">TYT Token Distribution</div>
         </div>
+        <div class="act-item line"></div>
         <div class="act-item">
           <div class="item-title">Air Drop</div>
         </div>
@@ -68,17 +69,25 @@ export default {
     letter-spacing: 2px;
   }
   .act-item{
-    flex-grow: 1;
-    flex-basis: 0;
-    flex-shrink: 0;
+    float: left;
+    width: 619px;
+    /*background: yellow;*/
+    height: 600px;
     /*text-align: center;*/
     /*background-color: yellow;*/
   }
+  .line{
+    height: 400px;
+    margin-top: 100px;
+    width: 0;
+    border-left: 1px solid #838186;
+    /*background: #838186;*/
+  }
   .act-content{
     width: 1240px;
-    height: 620px;
+    height: 600px;
     margin: 0 auto;
-    display: flex;
+    /*display: flex;*/
     /*background: red;*/
   }
   .title{
