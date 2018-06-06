@@ -4,6 +4,10 @@
 <template>
   <div class="bar">
     <div class="content">
+      <div class="left">
+        <img class="logo" src="../assets/logo_dark.svg"/>
+        <div class="tm smallsize-font">TM</div>
+      </div>
       <div class="right">
         <div class="menu">HOME</div>
         <div class="menu">FEATURES</div>
@@ -22,6 +26,30 @@ export default {
 </script>
 
 <style scoped>
+  .tm{
+    float: left;
+    color: #443f53;
+    font-size: 12px;
+    height: 10px;
+    width: 20px;
+    /*background: red;*/
+    line-height: 10px;
+    margin-top: 54px;
+    -webkit-transform-origin-x: 0;
+    -webkit-transform: scale(0.50);
+  }
+  .smallsize-font {
+    font-size:6px;
+  }
+  .logo{
+    float: left;
+    width: 41px;
+    height: 41px;
+    margin: 19px 0 19px 20px;
+  }
+  .left{
+    float: left;
+  }
   .bar{
     width: 100%;
     height: 79px;

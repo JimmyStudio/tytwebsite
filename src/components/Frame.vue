@@ -24,7 +24,10 @@
         </div>
         <div class="bt-item">
           <div class="name-wrap">
-            <div class="name">TYT.io</div>
+            <div class="name-wrap-item logo">
+              <img src="../assets/logo_white.svg"/>
+            </div>
+            <div class="name-wrap-item name">TYT.io</div>
           </div>
         </div>
         <div class="bt-item">
@@ -48,6 +51,16 @@ export default {
 </script>
 
 <style scoped>
+  .logo{
+    width: 60px;
+    height: 60px;
+    margin-top: 20px;
+    margin-left: 80px;
+    margin-right: 20px;
+  }
+  .name-wrap-item{
+    float: left;
+  }
   .cp{
     margin: 0 auto;
     width: 1240px;

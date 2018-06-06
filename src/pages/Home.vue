@@ -113,7 +113,7 @@ export default {
   .logo{
     width: 100%;
     height: 200px;
-    margin-top: 160px;
+    margin-top: 150px;
     line-height: 200px;
     font-size: 100px;
     font-weight: 700;
