@@ -12,6 +12,7 @@
         <div class="menu">HOME</div>
         <div class="menu">FEATURES</div>
         <div class="menu">ACTIVITY</div>
+        <div class="menu">INFORMATION</div>
         <div class="menu">ABOUT</div>
         <div class="btn menu">SIGN IN</div>
         <div class="btn menu">SIGN UP</div>

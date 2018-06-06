@@ -4,6 +4,7 @@
 <template>
   <div>
     <div class="gradient1">
+      <div class="store"></div>
       <div class="logo">TYT</div>
       <div class="desc">The most powerful infrastructure for</div>
       <div class="desc desc2">decentralized applications</div>
@@ -13,10 +14,12 @@
       </div>
     </div>
     <div class="gradient2">
-      <div class="title">FEATURES</div>
+      <div class="module">FEATURES</div>
+      <div class="title">Why Choose Us</div>
     </div>
     <div class="activity">
-      <div class="title">ACTIVITY</div>
+      <div class="module">ACTIVITY</div>
+      <div class="title">In Progress</div>
       <div class="act-content">
         <div class="act-item">
           <div class="item-title">TYT Token Distribution</div>
@@ -25,6 +28,10 @@
           <div class="item-title">Air Drop</div>
         </div>
       </div>
+    </div>
+    <div class="gradient2">
+      <div class="module">PROJECT INFORMATION</div>
+      <div class="title">Roadmap</div>
     </div>
   </div>
 </template>
@@ -35,6 +42,22 @@ export default {
 </script>
 
 <style scoped>
+  .store{
+    position: absolute;
+    z-index: 0;
+    width: 400px;
+    height: 700px;
+    background: url("../assets/store.png") no-repeat;
+    background-position: -140px 140px;
+  }
+  .module{
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+    line-height: 40px;
+    text-align: center;
+    color: #737085;
+  }
   .item-title{
     text-align: center;
     height: 40px;
@@ -60,12 +83,13 @@ export default {
   }
   .title{
     width: 100%;
-    height: 80px;
-    line-height: 80px;
+    height: 50px;
+    line-height: 50px;
     color: #393741;
     text-align: center;
     font-size: 30px;
     font-weight: 500;
+    letter-spacing: 2px;
   }
   .activity{
     width: 100%;
@@ -122,6 +146,7 @@ export default {
     letter-spacing: 10px;
   }
   .gradient1{
+    position: relative;
     overflow: hidden;
     height: 700px;
     width: 100%;
