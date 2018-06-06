@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="96px" height="80px" viewBox="0 0 96 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>社区</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-67.000000, -33.000000)">
+            <g id="社区" transform="translate(65.000000, 23.000000)">
+                <rect id="Rectangle-2" fill="#FFFFFF" opacity="0" x="0" y="0" width="100" height="100"></rect>
+                <g id="users" transform="translate(5.000000, 13.000000)" stroke="#7C91A6" stroke-linecap="round" stroke-linejoin="round" stroke-width="6">
+                    <path d="M65.4545455,73.6363636 L65.4545455,65.4545455 C65.4545455,56.4171586 58.1282959,49.0909091 49.0909091,49.0909091 L16.3636364,49.0909091 C7.32624955,49.0909091 9.08364293e-16,56.4171586 0,65.4545455 L0,73.6363636" id="Shape"></path>
+                    <circle id="Oval" cx="32.7272727" cy="16.3636364" r="16.3636364"></circle>
+                    <path d="M90,73.6363636 L90,65.4545455 C89.9944376,57.9972999 84.9477223,51.4870371 77.7272727,49.6227273" id="Shape"></path>
+                    <path d="M61.3636364,0.531818182 C68.604197,2.38569459 73.6684497,8.90996378 73.6684497,16.3840909 C73.6684497,23.858218 68.604197,30.3824872 61.3636364,32.2363636" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

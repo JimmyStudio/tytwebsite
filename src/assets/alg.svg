@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="93px" height="93px" viewBox="0 0 93 93" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>算法</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-624.000000, -473.000000)">
+            <g id="算法" transform="translate(620.000000, 468.000000)">
+                <g id="slack" transform="translate(7.000000, 5.000000)" stroke="#7C91A6" stroke-linecap="round" stroke-linejoin="round" stroke-width="6">
+                    <path d="M82.4869565,35.2173913 C73.6043478,5.5173913 60.8086957,-1.36956522 31.3043478,7.51304348 C1.8,16.3956522 -5.2826087,29.1913043 3.6,58.6956522 C12.4826087,88.2 25.2782609,95.2826087 54.7826087,86.4 C84.2869565,77.5173913 91.3695652,64.7217391 82.4869565,35.2173913 Z" id="Shape"></path>
+                    <path d="M45.273913,23.4391304 L59.2826087,64.1347826" id="Shape"></path>
+                    <path d="M26.8043478,29.7782609 L40.8130435,70.473913" id="Shape"></path>
+                    <path d="M60.2217391,30.7173913 L19.526087,44.726087" id="Shape"></path>
+                    <path d="M66.5608696,49.1869565 L25.8652174,63.1956522" id="Shape"></path>
+                </g>
+                <rect id="Rectangle-2-Copy" fill="#FFFFFF" opacity="0" x="0" y="0" width="100" height="100"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

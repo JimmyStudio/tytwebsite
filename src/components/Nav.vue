@@ -9,13 +9,18 @@
         <div class="tm smallsize-font">TM</div>
       </div>
       <div class="right">
-        <div class="menu">HOME</div>
-        <div class="menu">FEATURES</div>
-        <div class="menu">ACTIVITY</div>
-        <div class="menu">INFORMATION</div>
-        <div class="menu">ABOUT</div>
-        <div class="btn menu">SIGN IN</div>
-        <div class="btn menu">SIGN UP</div>
+        <div class="op">
+          <font-awesome-icon class="fai" :icon="['fas','bars']"></font-awesome-icon>
+        </div>
+        <div class="menus">
+          <div class="menu">HOME</div>
+          <div class="menu">FEATURES</div>
+          <!--<div class="menu">ACTIVITY</div>-->
+          <div class="menu">INFORMATION</div>
+          <div class="menu">TEAM</div>
+          <div class="btn menu">SIGN IN</div>
+          <div class="btn menu">SIGN UP</div>
+        </div>
       </div>
     </div>
   </div>
@@ -27,6 +32,21 @@ export default {
 </script>
 
 <style scoped>
+  .fai{
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 40px;
+    cursor: pointer;
+  }
+  .op{
+    display: none;
+    width: 100px;
+    height: 79px;
+    /*background: red;*/
+  }
+  .fai{
+    color: #443f53;
+  }
   .tm{
     float: left;
     color: #443f53;
@@ -96,5 +116,20 @@ export default {
     height: 32px;
     border: 1px solid #dad9d9;
     margin: 21px 10px;
+  }
+  @media all and (max-width: 767px) {
+    .content{
+      width: 100%;
+    }
+    .menus{
+      display: none;
+    }
+    .op{
+      display: block;
+    }
+    .tm{
+      -webkit-transform-origin-x: 0;
+      -webkit-transform: scale(0.80);
+    }
   }
 </style>

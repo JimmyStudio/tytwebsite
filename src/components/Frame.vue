@@ -14,13 +14,15 @@
     <div class="bottom">
       <div class="bt-content">
         <div class="bt-item">
-          <font-awesome-icon class="fai" :icon="['fab','github']"></font-awesome-icon>
-          <font-awesome-icon class="fai" :icon="['fab','telegram']"></font-awesome-icon>
-          <font-awesome-icon class="fai" :icon="['fab','discord']"></font-awesome-icon>
-          <font-awesome-icon class="fai" :icon="['fab','twitter']"></font-awesome-icon>
-          <font-awesome-icon class="fai" :icon="['fab','facebook-square']"></font-awesome-icon>
-          <font-awesome-icon class="fai" :icon="['fab','reddit']"></font-awesome-icon>
-          <font-awesome-icon class="fai" :icon="['fab','linkedin']"></font-awesome-icon>
+          <div class="bti">
+            <font-awesome-icon class="fai" :icon="['fab','github']"></font-awesome-icon>
+            <font-awesome-icon class="fai" :icon="['fab','telegram']"></font-awesome-icon>
+            <font-awesome-icon class="fai" :icon="['fab','discord']"></font-awesome-icon>
+            <font-awesome-icon class="fai" :icon="['fab','twitter']"></font-awesome-icon>
+            <font-awesome-icon class="fai" :icon="['fab','facebook-square']"></font-awesome-icon>
+            <font-awesome-icon class="fai" :icon="['fab','reddit']"></font-awesome-icon>
+            <!--<font-awesome-icon class="fai" :icon="['fab','linkedin']"></font-awesome-icon>-->
+          </div>
         </div>
         <div class="bt-item">
           <div class="name-wrap">
@@ -32,6 +34,7 @@
         </div>
         <div class="bt-item">
           <span class="an-item">support@tyt.io&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</span>
+          <!--<span class="an-item">support@tyt.io&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</span>-->
           <span class="an-item">Terms of Use&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</span>
           <span class="an-item">Privacy Policy</span>
         </div>
@@ -91,7 +94,7 @@ export default {
   }
   .name-wrap{
     width: 400px;
-    height: 130px;
+    /*height: 130px;*/
     margin: 0 auto;
     text-align: center;
   }
@@ -101,8 +104,15 @@ export default {
     letter-spacing: 5px;
     font-weight: 700;
   }
+  .bti{
+    width: 320px;
+    /*background: red;*/
+    margin: 0 auto;
+  }
   .fai{
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 40px;
     font-size: 30px;
     color: #908d98;
     cursor: pointer;
@@ -117,7 +127,7 @@ export default {
   }
   .bt-content{
     width: 1240px;
-    height: 130px;
+    /*height: 130px;*/
     margin: 0 auto;
     /*text-align: center;*/
     /*background-color: red;*/
@@ -126,8 +136,8 @@ export default {
   }
   .bt-item{
     flex-grow: 1;
-    flex-basis: 0;
-    flex-shrink: 0;
+    /*flex-basis: 0;*/
+    /*flex-shrink: 0;*/
     /*background-color: yellow;*/
   }
   .bottom{
@@ -144,5 +154,40 @@ export default {
   }
   .content{
     margin-top: 80px;
+  }
+  @media all and (max-width: 767px) {
+    .bottom{
+      height: 420px;
+    }
+    .bt-content{
+      width: 100%;
+      /*height: 450px;*/
+      flex-direction: column;
+    }
+    .cp{
+      width: 100%;
+      text-align: center;
+    }
+    .name-wrap{
+      /*width: 600px;*/
+      width: 100%;
+      margin: 0 auto;
+    }
+    .bt-item:last-child{
+      /*background: yellow;*/
+      text-align: center;
+    }
+    .bt-item{
+      /*flex-basis: ;*/
+      /*flex-shrink: 0;*/
+      /*background-color: yellow;*/
+    }
+    .bti{
+      /*width: 100%;*/
+      margin: 0 auto;
+    }
+    /*.bt-item{*/
+      /*width: 100%;*/
+    /*}*/
   }
 </style>

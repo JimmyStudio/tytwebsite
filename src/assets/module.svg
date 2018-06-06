@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="88px" height="95px" viewBox="0 0 88 95" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title> 模块</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-71.000000, -204.000000)">
+            <g id="-模块" transform="translate(65.000000, 201.000000)">
+                <rect id="Rectangle-2-Copy-2" fill="#FFFFFF" opacity="0" x="0" y="0" width="100" height="100"></rect>
+                <g id="package" transform="translate(9.000000, 5.000000)" stroke="#7C91A6" stroke-linecap="round" stroke-linejoin="round" stroke-width="6">
+                    <path d="M44.55,1.84090909 L77.2772727,18.2045455 C80.0576905,19.5861682 81.8165343,22.4225019 81.8181818,25.5272727 L81.8181818,64.5136364 C81.8165343,67.6184072 80.0576905,70.4547409 77.2772727,71.8363636 L44.55,88.2 C42.245313,89.3532662 39.5319597,89.3532662 37.2272727,88.2 L4.5,71.8363636 C1.72224166,70.4367366 -0.0216463752,67.5831016 4.54183132e-15,64.4727273 L4.54183132e-15,25.5272727 C0.00164751256,22.4225019 1.76049132,19.5861682 4.54090909,18.2045455 L37.2681818,1.84090909 C39.5616789,0.701242571 42.2565029,0.701242571 44.55,1.84090909 Z" id="Shape"></path>
+                    <polyline id="Shape" points="1.30909091 21.1090909 40.9090909 40.9090909 80.5090909 21.1090909"></polyline>
+                    <path d="M40.9090909,89.0181818 L40.9090909,40.9090909" id="Shape"></path>
+                    <path d="M20.4545455,10.2272727 L61.3636364,30.6818182" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

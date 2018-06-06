@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="96px" viewBox="0 0 64 96" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title> 模块</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-638.000000, -25.000000)">
+            <g id="-模块" transform="translate(620.000000, 23.000000)">
+                <rect id="Rectangle-2-Copy-2" fill="#FFFFFF" opacity="0" x="0" y="0" width="100" height="100"></rect>
+                <g id="award" transform="translate(21.000000, 5.000000)" stroke="#7C91A6" stroke-linecap="round" stroke-linejoin="round" stroke-width="6">
+                    <circle id="Oval" cx="28.6363636" cy="28.6363636" r="28.6363636"></circle>
+                    <polyline id="Shape" points="13.1318182 52.7318192 8.18181818 90.0009105 28.6363636 77.7278837 49.0909091 90.0009105 44.1409091 52.6909091"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
