@@ -23,10 +23,43 @@
       <div class="act-content">
         <div class="act-item">
           <div class="item-title">TYT Token Distribution</div>
+          <div class="item-title subtitle">TYT - ETH(Stage No.1)</div>
+          <div class="progress">
+            <div class="progress-item bar">
+              <div class="bar-inside"></div>
+            </div>
+            <div class="progress-item num">20.11%</div>
+          </div>
+          <div class="item-title subtitle">TARGET</div>
+          <div class="item-title white">1,000,000,000 TYT</div>
+          <div class="item-title subtitle">TIME REMAINING</div>
+          <div class="item-title white">3DAY</div>
+          <div class="item-title subtitle">SUPPORTERS</div>
+          <div class="item-title white">779</div>
+          <div class="btn disable">COMMING SOON</div>
+
+          <!--<div class="dis">-->
+            <!--<div class="dis-item"></div>-->
+            <!--<div class="dis-item"></div>-->
+          <!--</div>-->
         </div>
         <div class="act-item line"></div>
         <div class="act-item">
           <div class="item-title">Air Drop</div>
+          <div class="act-item-right">
+            <div class="item-title subtitle">TYT(Stage No.1)</div>
+            <div class="progress">
+              <div class="progress-item bar"></div>
+              <div class="progress-item num">0%</div>
+            </div>
+            <div class="item-title subtitle">TARGET</div>
+            <div class="item-title white">1,000,000,000 TYT</div>
+            <div class="item-title subtitle">TIME REMAINING</div>
+            <div class="item-title white">3DAY</div>
+            <div class="item-title subtitle">SUPPORTERS</div>
+            <div class="item-title white">779</div>
+            <div class="btn disable">COMMING SOON</div>
+          </div>
         </div>
       </div>
     </div>
@@ -43,6 +76,55 @@ export default {
 </script>
 
 <style scoped>
+  .bar-inside{
+    width: 100px;
+    height: 20px;
+    border-radius: 10px;
+    background: #fe7447;
+  }
+  .act-item-right{
+    margin-left: 49px;
+  }
+  .disable:hover{
+    cursor: not-allowed;
+  }
+  .num{
+    width: 100px;
+    text-align: center;
+    line-height: 60px;
+    color: #fe7447;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+  .bar{
+    width: 500px;
+    height: 20px;
+    background: white;
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+  .progress-item{
+    float: left;
+  }
+  .progress{
+    width: 600px;
+    height: 60px;
+    /*background: red;*/
+  }
+  /*.dis-item{*/
+    /*float: left;*/
+    /*width: 260px;*/
+    /*height: 500px;*/
+    /*background: yellow;*/
+    /*margin-left: 20px;*/
+    /*margin-right: 20px;*/
+  /*}*/
+  /*.dis{*/
+    /*width: 600px;*/
+    /*height: 500px;*/
+    /*background: red;*/
+    /*margin-top: 20px;*/
+  /*}*/
   .store{
     position: absolute;
     z-index: 0;
@@ -67,6 +149,17 @@ export default {
     font-size: 18px;
     font-weight: 500;
     letter-spacing: 2px;
+  }
+  .subtitle{
+    text-align: left;
+  }
+  .white{
+    text-align: left;
+    color: #fe7447;
+    height: 60px;
+    line-height: 60px;
+    font-size: 30px;
+    font-weight: 900;
   }
   .act-item{
     float: left;
