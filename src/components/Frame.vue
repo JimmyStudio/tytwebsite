@@ -4,7 +4,7 @@
 <template>
   <div>
     <div class="header">
-      <mynav :show="operateFlag" v-on:operateMenu="doOperateMenu" v-on:showFeatures="showFeatures" v-on:showInfo="showInfo" v-on:showHome="showHome"></mynav>
+      <mynav :show="operateFlag" v-on:operateMenu="doOperateMenu" v-on:team="team" v-on:showFeatures="showFeatures" v-on:showInfo="showInfo" v-on:showHome="showHome" v-on:join="join"></mynav>
     </div>
     <div class="content">
       <transition name="fade" mode="out-in">
@@ -36,7 +36,7 @@
           <span class="an-item">support@tyt.io&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</span>
           <!--<span class="an-item">support@tyt.io&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</span>-->
           <span class="an-item">Terms of Use&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</span>
-          <span class="an-item">Privacy Policy</span>
+          <span class="an-item" @click="pp">Privacy Policy</span>
         </div>
       </div>
       <div class="cp">Copyright © 2018 tyt.io | All rights reserved</div>
@@ -47,13 +47,16 @@
         <div class="menu" @click="showFeatures">FEATURES</div>
         <!--<div class="menu">ACTIVITY</div>-->
         <div class="menu" @click="showInfoInDevice">INFORMATION</div>
-        <div class="menu">TEAM</div>
+        <div class="menu" @click="team">ABOUT US</div>
         <div class="menu">
-          <div class="btn">SIGN IN</div>
+          <div class="btn" @click="join">JOIN THE COMMUNITY</div>
         </div>
-        <div class="menu">
-          <div class="btn">SIGN UP</div>
-        </div>
+        <!--<div class="menu">-->
+          <!--<div class="btn">SIGN IN</div>-->
+        <!--</div>-->
+        <!--<div class="menu">-->
+          <!--<div class="btn">SIGN UP</div>-->
+        <!--</div>-->
       </div>
     </div>
   </div>
@@ -71,8 +74,26 @@ export default {
     }
   },
   methods: {
+    pp () {
+      this.$router.push('/privacy-policy')
+      scrollTo(0, 0)
+    },
+    team () {
+      this.operateFlag = true
+      this.$router.push('/team')
+      scrollTo(0, 0)
+    },
+    join () {
+      this.operateFlag = true
+      this.$router.push('/join')
+      scrollTo(0, 0)
+    },
     showHome () {
       this.operateFlag = true
+      if (this.$router.currentRoute.name !== 'Home') {
+        this.$router.push('/')
+      }
+      scrollTo(0, 0)
     },
     doOperateMenu () {
       this.operateFlag = !this.operateFlag
@@ -80,14 +101,23 @@ export default {
     },
     showFeatures () {
       this.operateFlag = true
+      if (this.$router.currentRoute.name !== 'Home') {
+        this.$router.push('/')
+      }
       scrollTo(0, 700)
     },
     showInfo () {
       this.operateFlag = true
+      if (this.$router.currentRoute.name !== 'Home') {
+        this.$router.push('/')
+      }
       scrollTo(0, 1865)
     },
     showInfoInDevice () {
       this.operateFlag = true
+      if (this.$router.currentRoute.name !== 'Home') {
+        this.$router.push('/')
+      }
       let sw = window.screen.width
       if (sw === 414) {
         scrollTo(0, 2970)
@@ -136,13 +166,15 @@ export default {
     color: #595667;
     font-weight: 700;
   }
+  .menu:last-child{
+    height: 34px;
+  }
   .btn{
-    width: 125px;
+    width: 225px;
     height: 32px;
     border: 1px solid #dad9d9;
-    margin: 0 auto;
     line-height: 32px;
-    margin-top: 15px;
+    margin: 0 auto;
     /*margin: 21px 10px;*/
   }
   .showMenus{
@@ -295,5 +327,18 @@ export default {
     /*.bt-item{*/
       /*width: 100%;*/
     /*}*/
+  }
+  .fade-enter {
+    opacity:0;
+  }
+  .fade-leave{
+    opacity:1;
+  }
+  .fade-enter-active{
+    transition:opacity .2s;
+  }
+  .fade-leave-active{
+    opacity:0;
+    transition:opacity .2s;
   }
 </style>

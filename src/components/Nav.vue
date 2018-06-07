@@ -22,9 +22,10 @@
           <div class="menu" @click="showFeatures">FEATURES</div>
           <!--<div class="menu">ACTIVITY</div>-->
           <div class="menu" @click="showInfo">INFORMATION</div>
-          <div class="menu">TEAM</div>
-          <div class="btn menu">SIGN IN</div>
-          <div class="btn menu">SIGN UP</div>
+          <div class="menu" @click="team">ABOUT US</div>
+          <div class="btn menu" @click="join">JOIN THE COMMUNITY</div>
+          <!--<div class="btn menu">SIGN IN</div>-->
+          <!--<div class="btn menu">SIGN UP</div>-->
         </div>
       </div>
     </div>
@@ -48,6 +49,12 @@ export default {
     },
     showInfo () {
       this.$emit('showInfo')
+    },
+    join () {
+      this.$emit('join')
+    },
+    team () {
+      this.$emit('team')
     }
   }
 }
@@ -122,7 +129,7 @@ export default {
   }
   .menu {
     float: left;
-    width: 80px;
+    width: 100px;
     /*height: 32px;*/
     /*background-color: red;*/
     margin: 21px 10px;
@@ -139,7 +146,7 @@ export default {
     font-weight: 700;
   }
   .btn{
-    width: 125px;
+    width: 225px;
     height: 32px;
     border: 1px solid #dad9d9;
     margin: 21px 10px;
