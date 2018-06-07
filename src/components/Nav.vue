@@ -10,13 +10,18 @@
       </div>
       <div class="right">
         <div class="op">
-          <font-awesome-icon class="fai" :icon="['fas','bars']"></font-awesome-icon>
+          <div v-if="show">
+            <font-awesome-icon class="fai" :icon="['fas','bars']" @click="operateMenu"></font-awesome-icon>
+          </div>
+          <div v-else>
+            <font-awesome-icon class="fai" :icon="['fas','times']" @click="operateMenu"></font-awesome-icon>
+          </div>
         </div>
         <div class="menus">
-          <div class="menu">HOME</div>
-          <div class="menu">FEATURES</div>
+          <div class="menu" @click="showHome">HOME</div>
+          <div class="menu" @click="showFeatures">FEATURES</div>
           <!--<div class="menu">ACTIVITY</div>-->
-          <div class="menu">INFORMATION</div>
+          <div class="menu" @click="showInfo">INFORMATION</div>
           <div class="menu">TEAM</div>
           <div class="btn menu">SIGN IN</div>
           <div class="btn menu">SIGN UP</div>
@@ -28,6 +33,23 @@
 
 <script>
 export default {
+  props: {
+    show: Boolean
+  },
+  methods: {
+    showHome () {
+      this.$emit('showHome')
+    },
+    operateMenu () {
+      this.$emit('operateMenu')
+    },
+    showFeatures () {
+      this.$emit('showFeatures')
+    },
+    showInfo () {
+      this.$emit('showInfo')
+    }
+  }
 }
 </script>
 
@@ -42,6 +64,11 @@ export default {
     display: none;
     width: 100px;
     height: 79px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
     /*background: red;*/
   }
   .fai{

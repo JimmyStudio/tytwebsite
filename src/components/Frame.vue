@@ -4,11 +4,11 @@
 <template>
   <div>
     <div class="header">
-      <mynav></mynav>
+      <mynav :show="operateFlag" v-on:operateMenu="doOperateMenu" v-on:showFeatures="showFeatures" v-on:showInfo="showInfo" v-on:showHome="showHome"></mynav>
     </div>
     <div class="content">
       <transition name="fade" mode="out-in">
-        <router-view></router-view>
+        <router-view ref="rv"></router-view>
       </transition>
     </div>
     <div class="bottom">
@@ -41,6 +41,21 @@
       </div>
       <div class="cp">Copyright © 2018 tyt.io | All rights reserved</div>
     </div>
+    <div class="mask" v-bind:class="{showMask:!operateFlag}">
+      <div class="menus" v-bind:class="{showMenus:!operateFlag}">
+        <div class="menu" @click="showHome">HOME</div>
+        <div class="menu" @click="showFeatures">FEATURES</div>
+        <!--<div class="menu">ACTIVITY</div>-->
+        <div class="menu" @click="showInfoInDevice">INFORMATION</div>
+        <div class="menu">TEAM</div>
+        <div class="menu">
+          <div class="btn">SIGN IN</div>
+        </div>
+        <div class="menu">
+          <div class="btn">SIGN UP</div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -49,11 +64,96 @@ import mynav from '../components/Nav.vue'
 export default {
   components: {
     mynav
+  },
+  data () {
+    return {
+      operateFlag: true
+    }
+  },
+  methods: {
+    showHome () {
+      this.operateFlag = true
+    },
+    doOperateMenu () {
+      this.operateFlag = !this.operateFlag
+      scrollTo(0, 0)
+    },
+    showFeatures () {
+      this.operateFlag = true
+      scrollTo(0, 700)
+    },
+    showInfo () {
+      this.operateFlag = true
+      scrollTo(0, 1865)
+    },
+    showInfoInDevice () {
+      this.operateFlag = true
+      let sw = window.screen.width
+      if (sw === 414) {
+        scrollTo(0, 2970)
+      } else if (sw === 375) {
+        scrollTo(0, 3050)
+      }
+    }
   }
 }
 </script>
 
 <style scoped>
+  .menus{
+    display: none;
+  }
+  .mask{
+    position: absolute;
+    top: 80px;
+    left: 0;
+    z-index: 100;
+    width: 0;
+    height: 4260px;
+    background: white;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+  }
+  .menu {
+    height: 60px;
+    color: #838186;
+    width: 100%;
+    text-align: center;
+    /*height: 32px;*/
+    /*background-color: red;*/
+    line-height: 60px;
+    cursor: pointer;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+  }
+  .menu:hover{
+    color: #595667;
+    font-weight: 700;
+  }
+  .btn{
+    width: 125px;
+    height: 32px;
+    border: 1px solid #dad9d9;
+    margin: 0 auto;
+    line-height: 32px;
+    margin-top: 15px;
+    /*margin: 21px 10px;*/
+  }
+  .showMenus{
+    display: block;
+  }
+  .showMask{
+    width: 100%;
+  }
+  .btn:hover{
+    border-color: #4f4b5d;
+  }
   .logo{
     width: 60px;
     height: 60px;
@@ -186,6 +286,12 @@ export default {
       /*width: 100%;*/
       margin: 0 auto;
     }
+    /*.mask{*/
+      /*width: 100%;*/
+    /*}*/
+    /*.menus{*/
+      /*display: block;*/
+    /*}*/
     /*.bt-item{*/
       /*width: 100%;*/
     /*}*/

@@ -10,10 +10,10 @@
       <!--<div class="desc desc2">decentralized applications</div>-->
       <div class="btns">
         <!--<div class="btn">ANNOUNCEMENTS</div>-->
-        <div class="btn">WHITE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PAPER</div>
+        <div class="btn">WHITEPAPER</div>
       </div>
     </div>
-    <div class="gradient2">
+    <div ref="features" class="gradient2">
       <div class="module">FEATURES</div>
       <div class="title">What is TYT</div>
       <div class="w-content">
@@ -250,6 +250,7 @@ export default {
     top: -20px;
     left: 30px;
     line-height: 30px;
+    width: 100px;
     /*background: red;*/
     font-weight: 600;
   }
