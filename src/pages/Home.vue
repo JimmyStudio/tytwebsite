@@ -161,7 +161,71 @@
     <!--</div>-->
     <div class="rm">
       <div class="module">PROJECT INFORMATION</div>
-      <div class="title">Roadmap</div>
+      <div class="title rmp">Roadmap</div>
+      <div class="time-line-point">
+        <div class="time-desc">Q1/<span>2018</span></div>
+        <div class="time-sep"></div>
+        <div class="time-content">
+          <p>Initiate Project</p>
+          <p>Design Blockchain Architecture</p>
+          <p>Design Prototype</p>
+        </div>
+      </div>
+      <div class="time-line"></div>
+      <div class="time-line-point">
+        <div class="time-desc time-desc-left">Q2/<span>2018</span></div>
+        <div class="time-sep time-sep-left"></div>
+        <div class="time-content time-content-left">
+          <p>Design Core Mechanism: Token Generation, Reward Mechanism, etc</p>
+          <p>Design Consensus Mechanism</p>
+          <p>Design/Develop Encryption Protoco</p>
+          <p>Continue Develop Blockchain Architecture</p>
+        </div>
+      </div>
+      <div class="time-line l"></div>
+      <div class="time-line-point">
+        <div class="time-desc ">Q3/<span>2018</span></div>
+        <div class="time-sep "></div>
+        <div class="time-content">
+          <p>Continue Develop Blockchain Architecture</p>
+          <p>Design/Develop Duplicate Detection Engine</p>
+          <p>Design/Develop TYT ID Protocol</p>
+          <p>Design/Develop TYT AI Modules</p>
+        </div>
+      </div>
+      <div class="time-line l"></div>
+      <div class="time-line-point">
+        <div class="time-desc time-desc-left">Q4/<span>2018</span></div>
+        <div class="time-sep time-sep-left"></div>
+        <div class="time-content time-content-left">
+          <p>Launch TestNet 1.0</p>
+          <p>Test DApp Development Platform</p>
+          <p>Introduce 50 Meida Application Partners</p>
+          <p>Reach 10,000 Community Members</p>
+          <p>Reach 100 Qualified Ledger Nodes</p>
+        </div>
+      </div>
+      <div class="time-line l"></div>
+      <div class="time-line-point">
+        <div class="time-desc ">NewYear/<span>2019</span></div>
+        <div class="time-sep "></div>
+        <div class="time-content">
+          <p>TYT Chain v1.0 Launch</p>
+        </div>
+      </div>
+      <div class="time-line s"></div>
+      <div class="time-line-point">
+        <div class="time-desc time-desc-left"><span>2019</span></div>
+        <div class="time-sep time-sep-left"></div>
+        <div class="time-content time-content-left">
+          <p>Reach 500 Meida Application Partners</p>
+          <p>Reach 1,000,000 Community Members</p>
+          <p>Reach 1,000 Qualified Ledger Nodes</p>
+          <p>Reach 10,000 Community Members</p>
+          <p>Release TYT Chain v2.0</p>
+        </div>
+      </div>
+      <div class="time-line l"></div>
     </div>
   </div>
 </template>
@@ -172,6 +236,68 @@ export default {
 </script>
 
 <style scoped>
+  .time-content{
+    position: absolute;
+    width: 500px;
+    top: 30px;
+    left: 30px;
+    font-size: 14px;
+    color: #838186;
+  }
+  .time-desc{
+    position: absolute;
+    color: #393741;
+    top: -20px;
+    left: 30px;
+    line-height: 30px;
+    /*background: red;*/
+    font-weight: 600;
+  }
+  .time-desc span{
+    font-size: 12px;
+    /*font-weight: 300;*/
+  }
+  .time-sep{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100px;
+    height: 2px;
+    background: #7c91a6;
+  }
+  .time-line{
+    width: 5px;
+    height: 100px;
+    background: white;
+    margin: 0 auto;
+  }
+  .time-desc-left{
+    left: -80px;
+  }
+  .time-sep-left{
+    left: -100px;
+  }
+  .time-content-left{
+    left: -510px;
+    text-align: right;
+  }
+  .l{
+    height: 130px;
+  }
+  .s{
+    height: 60px;
+  }
+  .time-line-point{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background: #7c91a6;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+  .rmp{
+    margin-bottom: 40px;
+  }
   .har{
     margin-left: 10px;
   }
@@ -474,7 +600,8 @@ export default {
 
   }
   .rm{
-    height: 500px;
+    /*height: 500px;*/
+    padding-bottom: 40px;
     background-color: #eaebef;
   }
   @media all and (max-width: 767px) {
@@ -494,6 +621,26 @@ export default {
     }
     .f-item{
       width: 100%;
+    }
+    .time-desc-left{
+      left: 30px;
+    }
+    .time-sep-left{
+      left: 10px;
+    }
+    .time-content-left{
+      left: 30px;
+      text-align: left;
+      /*background: red;*/
+    }
+    .time-line-point{
+      margin-left: 20px;
+    }
+    .time-line{
+      margin-left: 28px;
+    }
+    .time-content{
+      width: 320px;
     }
   }
 

@@ -157,7 +157,7 @@ export default {
   }
   @media all and (max-width: 767px) {
     .bottom{
-      height: 420px;
+      height: 435px;
     }
     .bt-content{
       width: 100%;
