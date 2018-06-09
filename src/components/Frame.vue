@@ -39,7 +39,7 @@
           <span class="an-item" @click="pp">Privacy Policy</span>
         </div>
       </div>
-      <div class="cp">Copyright © 2018 tyt.io | All rights reserved</div>
+      <div class="cp">Copyright © 2018 TYT.io | All rights reserved</div>
     </div>
     <div class="mask" v-bind:class="{showMask:!operateFlag}">
       <div class="menus" v-bind:class="{showMenus:!operateFlag}">
@@ -252,7 +252,7 @@ export default {
     font-weight: 700;
   }
   .bti{
-    width: 290px;
+    width: 265px;
     /*background: red;*/
     margin: 0 auto;
   }
