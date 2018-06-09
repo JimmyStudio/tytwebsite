@@ -5,6 +5,7 @@ import Home from '@/pages/Home'
 import Join from '@/pages/Join'
 import Team from '@/pages/Team'
 import PP from '@/pages/Privacy'
+import TU from '@/pages/Term'
 
 Vue.use(Router)
 
@@ -34,6 +35,11 @@ export default new Router({
           path: 'privacy-policy',
           name: 'PP',
           component: PP
+        },
+        {
+          path: 'terms-of-use',
+          name: 'TU',
+          component: TU
         }
       ]
     }

@@ -6,7 +6,7 @@
     <div class="content">
       <div class="wrap">
         <div class="pp">Privacy Policy</div>
-        <p class="desc">This Privacy Policy is designed to assist you with understanding how tyt.io ("tyt.io", "we", "us" or "our") collect, use and disclose the information you provide us when accessing or using the website,<a href="https://tyt.io">tyt.io</a>.</p>
+        <p class="desc">This Privacy Policy is designed to assist you with understanding how TYT.io ("TYT.io", "we", "us" or "our") collect, use and disclose the information you provide us when accessing or using the website,<a href="https://TYT.io">TYT.io</a>.</p>
         <p class="p-t">Changes to our Privacy Policy</p>
         <p class="desc">We may change this Privacy Policy in our sole discretion at any time. Any revisions to this Privacy Policy will be posted on the home page of our Website. It is your obligation to periodically visit our Website to review any changes that may be made to this Privacy Policy. Your continued use of our Website constitutes your agreement to be bound by any such changes to this Privacy Policy. If you do not agree with this Privacy Policy, you are not authorized to use our Website and your sole recourse is to not use our Website.</p>
         <p class="p-t">What Information Do We Collect?</p>
@@ -63,7 +63,7 @@
         <p class="p-t">Hyperlinks and Third-Party Sites</p>
         <p class="desc">This Website may contain links to other third party websites that may collect personal information about you, including through cookies or other technologies. If you link to another website, you will leave this Website and this Privacy Policy will not apply to your use of and activity on those other websites. You should consult these other websites' privacy policies as we have no control over them and are not responsible for any information that is submitted to or collected by these third parties.</p>
         <p class="p-t">Contact Us</p>
-        <p class="desc">If you have any questions about this Privacy Policy, please contact us at <a href="mailto:support@tyt.io">support@tyt.io</a>.</p>
+        <p class="desc">If you have any questions about this Privacy Policy, please contact us at <a href="mailto:support@TYT.io">support@TYT.io</a>.</p>
         <p class="desc">Dated: May 01, 2018</p>
       </div>
     </div>

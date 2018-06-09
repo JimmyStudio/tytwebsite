@@ -33,9 +33,9 @@
           </div>
         </div>
         <div class="bt-item">
-          <span class="an-item">support@tyt.io&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</span>
+          <span class="an-item"><a href="mailto:support@tyt.io">support@TYT.io&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</a></span>
           <!--<span class="an-item">support@tyt.io&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</span>-->
-          <span class="an-item">Terms of Use&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</span>
+          <span class="an-item" @click="tu">Terms of Use&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</span>
           <span class="an-item" @click="pp">Privacy Policy</span>
         </div>
       </div>
@@ -74,6 +74,10 @@ export default {
     }
   },
   methods: {
+    tu () {
+      this.$router.push('/terms-of-use')
+      scrollTo(0, 0)
+    },
     pp () {
       this.$router.push('/privacy-policy')
       scrollTo(0, 0)
@@ -223,6 +227,17 @@ export default {
     /*margin-right: 10px;*/
     /*margin-left: 10px;*/
     /*border-right: 1px solid #908d98;*/
+  }
+  .an-item a{
+    font-size: 12px;
+    font-weight: 500;
+    color: #908d98;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    cursor: pointer;
   }
   .name-wrap{
     width: 400px;
