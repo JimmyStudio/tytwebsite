@@ -149,8 +149,6 @@
 
         </p>
         <p class="desc">Dated: May 01, 2018</p>
-
-
       </div>
     </div>
   </div>
