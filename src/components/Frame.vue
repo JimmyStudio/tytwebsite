@@ -15,7 +15,7 @@
       <div class="bt-content">
         <div class="bt-item">
           <div class="bti">
-            <font-awesome-icon class="fai" :icon="['fab','github']"></font-awesome-icon>
+            <!--<font-awesome-icon class="fai" :icon="['fab','github']"></font-awesome-icon>-->
             <font-awesome-icon class="fai" :icon="['fab','telegram']"></font-awesome-icon>
             <font-awesome-icon class="fai" :icon="['fab','discord']"></font-awesome-icon>
             <font-awesome-icon class="fai" :icon="['fab','twitter']"></font-awesome-icon>
@@ -252,7 +252,7 @@ export default {
     font-weight: 700;
   }
   .bti{
-    width: 320px;
+    width: 290px;
     /*background: red;*/
     margin: 0 auto;
   }
