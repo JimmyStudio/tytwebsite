@@ -10,7 +10,7 @@ import TU from '@/pages/Term'
 Vue.use(Router)
 
 export default new Router({
-  base: '/en-US/',
+  base: '/zh-CN/',
   mode: 'history',
   routes: [
     {

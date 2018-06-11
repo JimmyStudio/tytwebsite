@@ -18,13 +18,13 @@
           </div>
         </div>
         <div class="menus">
-          <div class="menu" @click="showHome">HOME</div>
-          <div class="menu" @click="showFeatures">FEATURES</div>
+          <div class="menu" @click="showHome">首页</div>
+          <div class="menu" @click="showFeatures">特性</div>
           <!--<div class="menu">ACTIVITY</div>-->
-          <div class="menu" @click="showInfo">INFORMATION</div>
-          <div class="menu" @click="team">ABOUT US</div>
-          <div class="btn menu" @click="join">JOIN THE COMMUNITY</div>
-          <div class="btn s menu" @click="lang">EN</div>
+          <div class="menu" @click="showInfo">项目信息</div>
+          <div class="menu" @click="team">关于我们</div>
+          <div class="btn menu" @click="join">加入TYT社区</div>
+          <div class="btn s menu" @click="lang">中文</div>
 
           <!--<div class="btn menu">SIGN IN</div>-->
           <!--<div class="btn menu">SIGN UP</div>-->

@@ -6,30 +6,30 @@
     <div class="gradient1">
       <div class="store"></div>
       <div class="logo">TYT</div>
-      <div class="desc">A blockchain enabled pan-entertainment ecosystem</div>
+      <div class="desc">基于区块链的泛娱乐生态系统</div>
       <!--<div class="desc desc2">decentralized applications</div>-->
       <div class="btns">
         <!--<div class="btn">ANNOUNCEMENTS</div>-->
-        <div class="btn">WHITEPAPER</div>
+        <div class="btn">白皮书</div>
       </div>
     </div>
     <div ref="features" class="gradient2">
-      <div class="module">FEATURES</div>
-      <div class="title">What is TYT</div>
+      <div class="module">特性</div>
+      <div class="title">什么是TYT</div>
       <div class="w-content">
-        <p class="w-desc">TYT is a blockchain enabled pan-entertainment ecosystem. We are committed to building an efficient and autonomous pan-entertainment eco-system through an explicit reward mechanism. We build blockchain infrastructures that allow DApp developers to create applications for various innovative scenarios.</p>
-        <p class="w-desc">TYT DApp development platform provide various common modules on the underlying infrastructure for different kinds of scenarios, such as copyright affirmation, copyright transaction, crowdfunding, etc.</p>
+        <p class="w-desc">TYT是一个基于区块链的泛娱乐生态系统。我们致力于通过明确的激励机制建立一个高效和自主的泛娱乐生态系统。我们构建区块链基础架构，使DApp开发人员能够为各种创新场景创建应用程序。</p>
+        <p class="w-desc">TYT DApp开发平台为底层基础设施提供各种通用模块，用于各种场景，如版权确认，版权交易，众筹等。</p>
       </div>
       <div class="sep"></div>
-      <div class="title">Why Choose Us</div>
-      <div class="f-t">Autonomous Community</div>
+      <div class="title">为什么选择我们</div>
+      <div class="f-t">自治社区</div>
       <div class="f-content">
         <div class="f-item">
           <div class="fai">
             <img src="../assets/commu.svg"/>
           </div>
           <div class="f-d">
-            <div class="f-desc">Community regulation, technical standards, incentive systems are jointly decided by the community vote</div>
+            <div class="f-desc">社区治理，技术标准，激励制度由社区投票共同决定</div>
           </div>
         </div>
         <div class="f-item">
@@ -37,7 +37,7 @@
             <img src="../assets/opr.svg"/>
           </div>
           <div class="f-d">
-            <div class="f-desc">TYT will be an open source blockchain</div>
+            <div class="f-desc">TYT将是一个开源的区块链</div>
           </div>
         </div>
         <div class="f-item">
@@ -45,18 +45,18 @@
             <img class="mon" src="../assets/mon.svg"/>
           </div>
           <div class="f-d">
-            <div class="f-desc">TYT will reward DApp developers as well as community service providers</div>
+            <div class="f-desc">TYT将激励DApp开发者以及社区服务提供者</div>
           </div>
         </div>
       </div>
-      <div class="f-t">Infrastructure</div>
+      <div class="f-t">基础设施</div>
       <div class="f-content">
         <div class="f-item">
           <div class="fai">
             <img class="har" src="../assets/har.svg"/>
           </div>
           <div class="f-d">
-            <div class="f-desc">TYT Chain: Serves as common ledger for DApps in TYT eco-system</div>
+            <div class="f-desc">TYTChain：在TYT生态系统中作为DApps提供分布式记账服务</div>
           </div>
         </div>
         <div class="f-item">
@@ -64,7 +64,7 @@
             <img src="../assets/opp.svg"/>
           </div>
           <div class="f-d">
-            <div class="f-desc">TYT DApp Platform: DApp development platform, provides various standardized modules, protocols and development tools</div>
+            <div class="f-desc">TYT DApp平台：提供各种标准化的模块，协议和开发工具</div>
           </div>
         </div>
         <div class="f-item">
@@ -72,18 +72,18 @@
             <img src="../assets/storage.svg"/>
           </div>
           <div class="f-d">
-            <div class="f-desc">TYT Decentralized File System: allows users to store contents more securely and access contents more quickly</div>
+            <div class="f-desc">TYT分布式文件系统：允许用户更安全地存储内容并更快地访问内容</div>
           </div>
         </div>
       </div>
-      <div class="f-t">Core Modules & Protocols</div>
+      <div class="f-t">核心模块和协议</div>
       <div class="f-content">
         <div class="f-item">
           <div class="fai">
             <img src="../assets/id.svg"/>
           </div>
           <div class="f-d">
-            <div class="f-desc">TYT ID: The identification protocol allows users to use one ID in different application scenarios on TYT eco-system</div>
+            <div class="f-desc">TYT ID：标识协议允许用户在TYT生态系统的不同应用场景中使用同一个ID</div>
           </div>
         </div>
         <div class="f-item">
@@ -91,7 +91,7 @@
             <img src="../assets/ai.svg"/>
           </div>
           <div class="f-d">
-            <div class="f-desc">AI Module: Artificial Intelligence module uses machine learning/ neural network algorithms to mine data on infrastructure & application layer, to maximize data value</div>
+            <div class="f-desc">AI模块：人工智能模块使用机器学习/神经网络算法挖掘基础架构和应用层的数据，以最大化数据价值</div>
           </div>
         </div>
         <div class="f-item">
@@ -99,7 +99,7 @@
             <img src="../assets/alg.svg"/>
           </div>
           <div class="f-d">
-            <div class="f-desc">Duplicate check engine: Compare content with digital signatures and similarity measurement algorithms to eliminate piracy</div>
+            <div class="f-desc">查重引擎：将内容与数字签名和相似性度算法进行比较以控制盗版</div>
           </div>
         </div>
       </div>
@@ -160,15 +160,15 @@
       <!--&lt;!&ndash;</div>&ndash;&gt;-->
     <!--</div>-->
     <div class="rm">
-      <div class="module">PROJECT INFORMATION</div>
-      <div class="title rmp">Roadmap</div>
+      <div class="module">项目信息</div>
+      <div class="title rmp">路线图</div>
       <div class="time-line-point">
         <div class="time-desc">Q1/<span>2018</span></div>
         <div class="time-sep"></div>
         <div class="time-content">
-          <p>Initiate Project</p>
-          <p>Design Blockchain Architecture</p>
-          <p>Design Prototype</p>
+          <p>启动项目</p>
+          <p>设计区块链架构</p>
+          <p>设计标准</p>
         </div>
       </div>
       <div class="time-line"></div>
@@ -176,10 +176,10 @@
         <div class="time-desc time-desc-left">Q2/<span>2018</span></div>
         <div class="time-sep time-sep-left"></div>
         <div class="time-content time-content-left">
-          <p>Design Core Mechanism: Token Generation, Reward Mechanism, etc</p>
-          <p>Design Consensus Mechanism</p>
-          <p>Design/Develop Encryption Protoco</p>
-          <p>Continue Develop Blockchain Architecture</p>
+          <p>设计核心机制：Token生成，奖励机制等</p>
+          <p>设计共识机制</p>
+          <p>设计/开发加密协议</p>
+          <p>架构设计优化</p>
         </div>
       </div>
       <div class="time-line l"></div>
@@ -187,10 +187,10 @@
         <div class="time-desc ">Q3/<span>2018</span></div>
         <div class="time-sep "></div>
         <div class="time-content">
-          <p>Continue Develop Blockchain Architecture</p>
-          <p>Design/Develop Duplicate Detection Engine</p>
-          <p>Design/Develop TYT ID Protocol</p>
-          <p>Design/Develop TYT AI Modules</p>
+          <p>设计/开发重复检测引擎</p>
+          <p>设计/开发TYT ID协议</p>
+          <p>设计/开发TYT AI模块</p>
+          <p>测试版本开发</p>
         </div>
       </div>
       <div class="time-line l"></div>
@@ -198,11 +198,11 @@
         <div class="time-desc time-desc-left">Q4/<span>2018</span></div>
         <div class="time-sep time-sep-left"></div>
         <div class="time-content time-content-left">
-          <p>Launch TestNet 1.0</p>
-          <p>Test DApp Development Platform</p>
-          <p>Introduce 50 Meida Application Partners</p>
-          <p>Reach 10,000 Community Members</p>
-          <p>Reach 100 Qualified Ledger Nodes</p>
+          <p>启动测试网络1.0</p>
+          <p>测试Dapp开发平台</p>
+          <p>引进50名泛文娱应用合作伙伴</p>
+          <p>拥有10000+名社区成员</p>
+          <p>全球范围内确定100+个合格的共识节点</p>
         </div>
       </div>
       <div class="time-line l"></div>
@@ -210,7 +210,7 @@
         <div class="time-desc ">NewYear/<span>2019</span></div>
         <div class="time-sep "></div>
         <div class="time-content">
-          <p>TYT Chain v1.0 Launch</p>
+          <p>TYT Chain v1.0 发布</p>
         </div>
       </div>
       <div class="time-line s"></div>
@@ -218,11 +218,10 @@
         <div class="time-desc time-desc-left"><span>2019</span></div>
         <div class="time-sep time-sep-left"></div>
         <div class="time-content time-content-left">
-          <p>Reach 500 Meida Application Partners</p>
-          <p>Reach 1,000,000 Community Members</p>
-          <p>Reach 1,000 Qualified Ledger Nodes</p>
-          <p>Reach 10,000 Community Members</p>
-          <p>Release TYT Chain v2.0</p>
+          <p>泛文娱应用合作伙伴达到500名</p>
+          <p>社区成员达到1,000,000+名</p>
+          <p>合格的共识节点达到1000个以上</p>
+          <p>发布TYT Chain v2.0</p>
         </div>
       </div>
       <div class="time-line l"></div>

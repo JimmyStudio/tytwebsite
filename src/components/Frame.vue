@@ -35,24 +35,24 @@
         <div class="bt-item">
           <span class="an-item"><a href="mailto:support@tyt.io">support@TYT.io&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</a></span>
           <!--<span class="an-item">support@tyt.io&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</span>-->
-          <span class="an-item" @click="tu">Terms of Use&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</span>
-          <span class="an-item" @click="pp">Privacy Policy</span>
+          <span class="an-item" @click="tu">使用条款&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</span>
+          <span class="an-item" @click="pp">隐私策略</span>
         </div>
       </div>
       <div class="cp">Copyright © 2018 TYT.io | All rights reserved</div>
     </div>
     <div class="mask" v-bind:class="{showMask:!operateFlag}">
       <div class="menus" v-bind:class="{showMenus:!operateFlag}">
-        <div class="menu" @click="showHome">HOME</div>
-        <div class="menu" @click="showFeatures">FEATURES</div>
+        <div class="menu" @click="showHome">首页</div>
+        <div class="menu" @click="showFeatures">特性</div>
         <!--<div class="menu">ACTIVITY</div>-->
-        <div class="menu" @click="showInfoInDevice">INFORMATION</div>
-        <div class="menu" @click="team">ABOUT US</div>
+        <div class="menu" @click="showInfoInDevice">项目信息</div>
+        <div class="menu" @click="team">关于我们</div>
         <div class="menu">
-          <div class="btn" @click="join">JOIN THE COMMUNITY</div>
+          <div class="btn" @click="join">加入社区</div>
         </div>
         <div class="menu">
-          <div class="btn s" @click="lang">EN</div>
+          <div class="btn s" @click="lang">中文</div>
         </div>
         <!--<div class="menu">-->
           <!--<div class="btn">SIGN IN</div>-->
@@ -78,7 +78,7 @@ export default {
   },
   methods: {
     lang () {
-      window.location.href = 'https://tyt.io/zh-CN'
+      window.location.href = 'https://tyt.io/en-US'
     },
     tu () {
       this.$router.push('/terms-of-use')
