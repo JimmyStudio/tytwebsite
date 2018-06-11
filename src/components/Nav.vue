@@ -24,6 +24,8 @@
           <div class="menu" @click="showInfo">INFORMATION</div>
           <div class="menu" @click="team">ABOUT US</div>
           <div class="btn menu" @click="join">JOIN THE COMMUNITY</div>
+          <div class="btn s menu" @click="lang">EN</div>
+
           <!--<div class="btn menu">SIGN IN</div>-->
           <!--<div class="btn menu">SIGN UP</div>-->
         </div>
@@ -55,6 +57,9 @@ export default {
     },
     team () {
       this.$emit('team')
+    },
+    lang () {
+      this.$emit('lang')
     }
   }
 }
@@ -150,6 +155,16 @@ export default {
     height: 32px;
     border: 1px solid #dad9d9;
     margin: 21px 10px;
+  }
+  .s{
+    margin: 26px 10px;
+    height: 22px;
+    line-height: 22px;
+    font-size: 12px;
+    width: 32px;
+    color: #595667;
+    font-weight: 700;
+    border: 1px solid #4f4b5d;
   }
   @media all and (max-width: 767px) {
     .content{

@@ -4,7 +4,7 @@
 <template>
   <div>
     <div class="header">
-      <mynav :show="operateFlag" v-on:operateMenu="doOperateMenu" v-on:team="team" v-on:showFeatures="showFeatures" v-on:showInfo="showInfo" v-on:showHome="showHome" v-on:join="join"></mynav>
+      <mynav :show="operateFlag" v-on:lang="lang" v-on:operateMenu="doOperateMenu" v-on:team="team" v-on:showFeatures="showFeatures" v-on:showInfo="showInfo" v-on:showHome="showHome" v-on:join="join"></mynav>
     </div>
     <div class="content">
       <transition name="fade" mode="out-in">
@@ -51,6 +51,9 @@
         <div class="menu">
           <div class="btn" @click="join">JOIN THE COMMUNITY</div>
         </div>
+        <div class="menu">
+          <div class="btn s" @click="lang">EN</div>
+        </div>
         <!--<div class="menu">-->
           <!--<div class="btn">SIGN IN</div>-->
         <!--</div>-->
@@ -74,6 +77,9 @@ export default {
     }
   },
   methods: {
+    lang () {
+      window.location.href = 'https://tyt.io/zh-CN'
+    },
     tu () {
       this.$router.push('/terms-of-use')
       scrollTo(0, 0)
@@ -301,6 +307,16 @@ export default {
   }
   .content{
     margin-top: 80px;
+  }
+  .s{
+    /*margin: 26px 10px;*/
+    height: 22px;
+    line-height: 22px;
+    font-size: 12px;
+    width: 32px;
+    color: #595667;
+    font-weight: 700;
+    border: 1px solid #4f4b5d;
   }
   @media all and (max-width: 767px) {
     .bottom{
