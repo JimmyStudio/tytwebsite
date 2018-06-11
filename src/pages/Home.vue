@@ -221,7 +221,6 @@
           <p>Reach 500 Meida Application Partners</p>
           <p>Reach 1,000,000 Community Members</p>
           <p>Reach 1,000 Qualified Ledger Nodes</p>
-          <p>Reach 10,000 Community Members</p>
           <p>Release TYT Chain v2.0</p>
         </div>
       </div>

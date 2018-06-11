@@ -309,7 +309,7 @@ export default {
     margin-top: 80px;
   }
   .s{
-    /*margin: 26px 10px;*/
+    margin: 26px 10px;
     height: 22px;
     line-height: 22px;
     font-size: 12px;
