@@ -74,29 +74,6 @@
         <p class="desc">• Invested and produced over 10 TV series and films</p>
       </div>
       <div class="member">
-        <div class="name">Steve Wu</div>
-        <div class="title">Architect/Former Tencent Employe</div>
-        <div class="sep"></div>
-        <p class="desc">• IT Specialist, worked at Tencent, Woniu</p>
-        <p class="desc">• Specialist in internet security and cryptography</p>
-        <p class="desc">• Currently responsible for architecture development in TYT</p>
-      </div>
-      <div class="member">
-        <div class="name">Lin Xie</div>
-        <div class="title">Architect/Former Tencent Employe</div>
-        <div class="sep"></div>
-        <p class="desc">• IT specialist, worked at Tencent, Alibaba, and Huawei</p>
-        <p class="desc">• One of the earliest architect in Aliyun, responsible for cloud server cluster development and maintenance</p>
-        <p class="desc">• Currently responsible for architecture development in TYT</p>
-      </div>
-      <div class="member">
-        <div class="name">Kaka Zhang</div>
-        <div class="title">Blockchain Developer/Former Tencent Employee</div>
-        <div class="sep"></div>
-        <p class="desc">• Former backend engineer in Tencent research academy, one of the framework developer for enterprise QQ</p>
-        <p class="desc">• Currently responsible for blockchain development in TYT</p>
-      </div>
-      <div class="member">
         <div class="name">Yu Zhou</div>
         <div class="title">Operation Manager/Former Tencent Employee</div>
         <div class="sep"></div>
@@ -105,8 +82,31 @@
         <p class="desc">• Currently responsible for operation management in TYT</p>
       </div>
       <div class="member">
+        <div class="name">Steve Wu</div>
+        <div class="title">IT specialist/Former Tencent Employe</div>
+        <div class="sep"></div>
+        <p class="desc">• IT Specialist, worked at Tencent, Woniu</p>
+        <p class="desc">• Specialist in internet security and cryptography</p>
+        <p class="desc">• Currently responsible for architecture development in TYT</p>
+      </div>
+      <div class="member">
+        <div class="name">Lin Xie</div>
+        <div class="title">IT specialist/Former Tencent Employe</div>
+        <div class="sep"></div>
+        <p class="desc">• IT specialist, worked at Tencent, Alibaba, and Huawei</p>
+        <p class="desc">• One of the earliest architect in Aliyun, responsible for cloud server cluster development and maintenance</p>
+        <p class="desc">• Currently responsible for architecture development in TYT</p>
+      </div>
+      <div class="member">
+        <div class="name">Kaka Zhang</div>
+        <div class="title">IT specialist/Former Tencent Employee</div>
+        <div class="sep"></div>
+        <p class="desc">• Former backend engineer in Tencent research academy, one of the framework developer for enterprise QQ</p>
+        <p class="desc">• Currently responsible for blockchain development in TYT</p>
+      </div>
+      <div class="member">
         <div class="name">Kevin Liao</div>
-        <div class="title">Architect</div>
+        <div class="title">IT specialist</div>
         <div class="sep"></div>
         <p class="desc">• Former architect in Citi Bank</p>
         <p class="desc">• Developed quantitative trading system and risk management system individually</p>
@@ -115,7 +115,7 @@
       </div>
       <div class="member">
         <div class="name">Jimmy Luo</div>
-        <div class="title">Blockchain Developer</div>
+        <div class="title">IT specialist</div>
         <div class="sep"></div>
         <p class="desc">• Years of experience in system architecture design, quantitative trading system design</p>
         <p class="desc">• Profound knowledge in blockchain open source technology</p>
