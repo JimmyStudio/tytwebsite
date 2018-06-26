@@ -2,32 +2,48 @@
  * Created by Jimmy on 2018/6/5.
  */
 <template>
-  <div class="bar">
-    <div class="content">
-      <div class="left">
-        <img class="logo" src="../assets/logo_dark.svg"/>
-        <div class="tm smallsize-font">TM</div>
+  <div>
+    <div v-if="device">
+      <div class="pc">
+        <div class="content">
+          <div class="top">
+            <div class="t-i">
+              <img class="t-i-i" src="../assets/logo_dark.svg"/>
+            </div>
+            <div class="t-i">
+              <div class="logo">TYT</div>
+              <div class="desc">基于区块链的泛文娱生态系统</div>
+            </div>
+            <div class="t-i tr">
+              <font-awesome-icon class="fai" :icon="['fab','telegram']"></font-awesome-icon>
+              <font-awesome-icon class="fai" :icon="['fab','discord']"></font-awesome-icon>
+              <font-awesome-icon class="fai" :icon="['fab','facebook-f']"></font-awesome-icon>
+              <font-awesome-icon class="fai" :icon="['fab','twitter']" @click="openTwitter"></font-awesome-icon>
+            </div>
+          </div>
+          <div class="menus">
+            <div class="menu" @click="home">首页</div>
+            <div class="menu" @click="whitepaper">白皮书</div>
+            <div class="menu" @click="cooperation">机构合作</div>
+            <div class="menu" @click="news">新闻</div>
+            <div class="menu" @click="team">团队</div>
+          </div>
+        </div>
       </div>
-      <div class="right">
-        <div class="op">
+    </div>
+    <div v-else>
+      <div class="phone">
+        <div class="left">
+          <div class="logo-phone">TYT</div>
+          <div class="desc-phone">基于区块链的泛文娱生态系统</div>
+        </div>
+        <div class="right">
           <div v-if="show">
             <font-awesome-icon class="fai" :icon="['fas','bars']" @click="operateMenu"></font-awesome-icon>
           </div>
           <div v-else>
             <font-awesome-icon class="fai" :icon="['fas','times']" @click="operateMenu"></font-awesome-icon>
           </div>
-        </div>
-        <div class="menus">
-          <div class="menu" @click="showHome">首页</div>
-          <div class="menu" @click="showFeatures">特性</div>
-          <!--<div class="menu">ACTIVITY</div>-->
-          <div class="menu" @click="showInfo">项目信息</div>
-          <div class="menu" @click="team">关于我们</div>
-          <div class="btn menu" @click="join">加入TYT社区</div>
-          <div class="btn s menu" @click="lang">中文</div>
-
-          <!--<div class="btn menu">SIGN IN</div>-->
-          <!--<div class="btn menu">SIGN UP</div>-->
         </div>
       </div>
     </div>
@@ -39,27 +55,47 @@ export default {
   props: {
     show: Boolean
   },
+  data () {
+    return {
+      device: true
+    }
+  },
   methods: {
-    showHome () {
-      this.$emit('showHome')
-    },
     operateMenu () {
       this.$emit('operateMenu')
     },
-    showFeatures () {
-      this.$emit('showFeatures')
+    home () {
+      this.$router.push('/')
     },
-    showInfo () {
-      this.$emit('showInfo')
+    whitepaper () {
+      window.open('https://tyt.io/static/TYT_whitepaper_zh-CN.pdf')
     },
-    join () {
-      this.$emit('join')
+    cooperation () {
+      this.$router.push('/cooperation')
+    },
+    news () {
+      this.$router.push('/news')
     },
     team () {
-      this.$emit('team')
+      this.$router.push('/team')
     },
-    lang () {
-      this.$emit('lang')
+    openTwitter () {
+      window.open('https://twitter.com/tytchain')
+    }
+  },
+  mounted () {
+    if (document.documentElement.clientWidth > 768) {
+      this.device = true
+    } else {
+      this.device = false
+    }
+    let that = this
+    window.onresize = function () {
+      if (document.documentElement.clientWidth > 768) {
+        that.device = true
+      } else {
+        that.device = false
+      }
     }
   }
 }
@@ -67,78 +103,36 @@ export default {
 
 <style scoped>
   .fai{
-    font-size: 20px;
-    margin-top: 30px;
-    margin-left: 40px;
+    margin-right: 15px;
     cursor: pointer;
   }
-  .op{
-    display: none;
-    width: 100px;
-    height: 79px;
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    -ms-transition: all .3s;
-    -o-transition: all .3s;
-    transition: all .3s;
-    /*background: red;*/
+  .fai:hover{
+    color: #00d8a4;
   }
-  .fai{
-    color: #443f53;
-  }
-  .tm{
-    float: left;
-    color: #443f53;
-    font-size: 12px;
-    height: 10px;
-    width: 20px;
-    /*background: red;*/
-    line-height: 10px;
-    margin-top: 54px;
-    -webkit-transform-origin-x: 0;
-    -webkit-transform: scale(0.50);
-  }
-  .smallsize-font {
-    font-size:6px;
-  }
-  .logo{
-    float: left;
-    width: 41px;
-    height: 41px;
-    margin: 19px 0 19px 20px;
+  .right{
+    float: right;
+    height: 100px;
+    line-height: 100px;
+    font-size: 40px;
+    color: #00d8a4;
   }
   .left{
     float: left;
   }
-  .bar{
+  .phone{
     width: 100%;
-    height: 79px;
-    background-color: #ffffff;
-    border-bottom: 1px solid #d8d8d8;
+    height: 100px;
+    background: #00263f;
+    color: white;
   }
-  .content{
-    width: 1240px;
-    height: 79px;
-    /*background-color: red;*/
-    margin: 0 auto;
-    color: #838186;
-    font-weight: 500;
-    font-size: 14px;
-    text-align: center;
-  }
-  .right{
-    float: right;
-  }
-  .btn:hover{
-    border-color: #4f4b5d;
-  }
-  .menu {
+  .menu{
     float: left;
-    width: 100px;
-    /*height: 32px;*/
-    /*background-color: red;*/
-    margin: 21px 10px;
-    line-height: 32px;
+    height: 80px;
+    width: 120px;
+    line-height: 80px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
     cursor: pointer;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
@@ -147,38 +141,73 @@ export default {
     transition: all .3s;
   }
   .menu:hover{
-    color: #595667;
-    font-weight: 700;
+    color: #00d8a4;
   }
-  .btn{
-    width: 225px;
-    height: 32px;
-    border: 1px solid #dad9d9;
-    margin: 21px 10px;
+  .menus{
+    height: 80px;
+    width: 600px;
+    margin: 0 auto;
   }
-  .s{
-    margin: 26px 10px;
-    height: 22px;
-    line-height: 22px;
+  .tr{
+    text-align: right;
+    line-height: 120px;
+    font-size: 14px;
+  }
+  .logo{
+    text-align: center;
+    margin-top: 20px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 4px;
+  }
+  .logo-phone{
+    padding-top: 28px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    margin-left: 20px;
+  }
+  .desc{
+    height: 20px;
     font-size: 12px;
-    width: 32px;
-    color: #595667;
-    font-weight: 700;
-    border: 1px solid #4f4b5d;
+    text-align: center;
+    line-height: 20px;
   }
-  @media all and (max-width: 767px) {
-    .content{
-      width: 100%;
-    }
-    .menus{
-      display: none;
-    }
-    .op{
-      display: block;
-    }
-    .tm{
-      -webkit-transform-origin-x: 0;
-      -webkit-transform: scale(0.80);
-    }
+  .desc-phone{
+    height: 14px;
+    font-size: 12px;
+    line-height: 14px;
+    margin-left: 20px;
+  }
+  .top{
+    height: 120px;
+    width: 100%;
+    display: flex;
+  }
+  .t-i{
+    flex-grow: 1;
+    flex-basis: 0;
+    flex-shrink: 0;
+    /*background: red;*/
+  }
+  .content{
+    width: 1200px;
+    margin: 0 auto;
+    color: white;
+  }
+  .pc{
+    width: 100%;
+    height: 200px;
+    background: url("../assets/top_screen.jpg") ;
+  }
+  .t-i-i{
+    width: 50px;
+    height: 50px;
+    /*margin-left: 20px;*/
+    margin-top: 40px;
   }
 </style>

@@ -2,10 +2,10 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Frame from '@/components/Frame'
 import Home from '@/pages/Home'
-import Join from '@/pages/Join'
+import News from '@/pages/News'
+import NewsDetail from '@/pages/NewsDetail'
 import Team from '@/pages/Team'
-import PP from '@/pages/Privacy'
-import TU from '@/pages/Term'
+import Cooperation from '@/pages/Cooperation'
 
 Vue.use(Router)
 
@@ -23,9 +23,14 @@ export default new Router({
           component: Home
         },
         {
-          path: 'join',
-          name: 'Join',
-          component: Join
+          path: 'news',
+          name: 'News',
+          component: News
+        },
+        {
+          path: 'news/:id',
+          name: 'NewsDetail',
+          component: NewsDetail
         },
         {
           path: 'team',
@@ -33,14 +38,9 @@ export default new Router({
           component: Team
         },
         {
-          path: 'privacy-policy',
-          name: 'PP',
-          component: PP
-        },
-        {
-          path: 'terms-of-use',
-          name: 'TU',
-          component: TU
+          path: 'cooperation',
+          name: 'Cooperation',
+          component: Cooperation
         }
       ]
     }

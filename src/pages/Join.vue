@@ -3,9 +3,6 @@
  */
 <template>
   <div>
-    <div class="content">
-      即将开放，敬请期待
-    </div>
   </div>
 </template>
 
@@ -15,13 +12,4 @@ export default {
 </script>
 
 <style scoped>
-  .content{
-    width: 100%;
-    height: 800px;
-    text-align: center;
-    color: #443f53;
-    line-height: 400px;
-    font-size: 30px;
-    font-weight: 500;
-  }
 </style>
